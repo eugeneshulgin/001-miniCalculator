@@ -1,3 +1,9 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
 .calc-wrapper {
 	background-color: rgb(67, 71, 112);
 	padding: 10px;
