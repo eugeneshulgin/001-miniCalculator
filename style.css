@@ -1,6 +1,7 @@
 .calc-wrapper {
 	background-color: rgb(67, 71, 112);
 	padding: 10px;
+	height: 100vh;
 }
 
 .calc {
