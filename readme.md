@@ -1,1 +1,2 @@
-I learn JavaSCRIPT.
+created mini-calc
+created calc
