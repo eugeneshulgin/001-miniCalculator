@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
+	color: #fff;
 }
 
-.calc-wrapper {
+/* .calc-wrapper {
 	background-color: rgb(67, 71, 112);
 	padding: 10px;
 	height: 100vh;
@@ -78,4 +83,90 @@
 	background-color: bisque;
 	font-size: 20px;
 	margin-right: 5px;
+} */
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+
+/*												calculator	 											*/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.calc {
+	width: 300px;
+	height: 500px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	background: #000;
+	font-family: 'Poppins', sans-serif;
+	padding: 18px;
+	box-shadow: 4px 4px 4px #4f4f4f;
+}
+
+.calc-screen {
+	height: 125px;
+	padding: 10px;
+	display: grid;
+	justify-items: end;
+	align-items: end;
+
+}
+
+.calc-screen p {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.buttons {
+	display: grid;
+	grid-template-areas:
+		"ac plus-minus percent division"
+		"seven eigth nine multiply"
+		"four five six minus"
+		"one two three plus"
+		"zero zero dot equal";
+	justify-items: center;
+	grid-gap: 10px;
+}
+
+.btn {
+	width: 60px;
+	height: 60px;
+	background: #333;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 60px;
+	font-size: 1.5rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn.zero {
+	grid-area: zero;
+	width: 100%;
+	border-radius: 30px;
+}
+
+.btn:hover {
+	filter: brightness(120%);
+}
+
+.btn:active {
+	filter: brightness(90%);
+}
+
+.btn.bg-grey {
+	background: #a6a6a6;
+}
+
+.btn.bg-orange {
+	background: #ff9501;
 }
